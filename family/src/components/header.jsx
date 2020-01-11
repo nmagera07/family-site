@@ -7,10 +7,11 @@ const Header = (props) => {
         <div className="header">
             <img src={menuHeader} alt="menu header"></img>
             <div className="header-links">
-                <h2>ABOUT</h2>
-                <h2>MENU</h2>
-                <h2>RSVP</h2>
+                <a href="#">About</a>
+                <a href="#">Menu</a>
+                <a href="#">Rsvp</a>
             </div>
+            {/* <hr></hr> */}
         </div>
      );
 }

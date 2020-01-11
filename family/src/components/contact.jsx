@@ -20,7 +20,7 @@ const Contact = (props) => {
     }
 
     return ( 
-        <div>
+        <div className="contact">
             <h1>How can you reach us?</h1>
             <p>Please use the form below to let us know if you're coming and what you're bringing!</p>
             <form>
@@ -54,10 +54,14 @@ const Contact = (props) => {
                 ></input>
                 <button>Submit</button>
             </form>
-            <p>Feel free to contact us with any questions.</p>
-            <p>You can email joanreid@reid-home, call 412-257-0097, or text 412-215-6654.</p>
+            <div className="contact-p">
+                <p>Feel free to contact us with any questions.</p>
+                <p>You can email joanreid@reid-home, call 412-257-0097, or text 412-215-6654.</p>
+            </div>
             <p>We look forward to hearing from you!</p>
-            <p>&#8593; Back to top</p>
+            <div className="contact-a">
+                <a href="#">&#8593; Back to top</a>
+            </div>
         </div>
      );
 }
