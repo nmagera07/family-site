@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const helmet = require('helmet')
 
-const dataRouter = require('./data/data-router')
+const dataRouter = require('./data/data-router.js')
 
 const server = express()
 

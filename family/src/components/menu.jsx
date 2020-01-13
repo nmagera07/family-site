@@ -8,6 +8,7 @@ const Menu = (props) => {
       
             <tr>
             <th>Guest</th>
+            <th>Number of Guests</th>
             <th>Dish</th>
             </tr>
 

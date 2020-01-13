@@ -4,7 +4,8 @@ module.exports = {
     getData,
     add,
     update,
-    findById
+    findById,
+    remove
 }
 
 
@@ -22,4 +23,8 @@ function update(changes, id) {
 
 function findById(id) {
     return db('data').where({id})
+}
+
+function remove(id) {
+    return db('data').where({ id }).del()
 }
