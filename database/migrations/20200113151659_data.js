@@ -1,6 +1,13 @@
 
 exports.up = function(knex) {
-  return knex.schema.createTable('data', tbl => {
+  return knex.schema.createTable('xmas', tbl => {
+    tbl.increments()
+
+    tbl.string('name').notNullable()
+    tbl.string('guests').notNullable()
+    tbl.string('dishes').notNullable()
+  })
+  .createTable('fourth', tbl => {
     tbl.increments()
 
     tbl.string('name').notNullable()
@@ -10,6 +17,6 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-    return knex.schema.dropTableIfExists('data')
-        .dropTableIfExists('data')
+    return knex.schema.dropTableIfExists('fourth')
+        .dropTableIfExists('xmas')
 };
