@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url('images/xmasbg2.png');
+  background-image: url('images/picnicbgv1.png');
   width: 1000px;
   margin: 0 auto;
   font-family: Roboto;
@@ -42,14 +42,14 @@ body {
 }
    
 .header a:hover {
-	color: #515a63;
+	color: #e22d45;
 	/* padding-top: 4px;
 	padding-bottom: 2px; */
 	background-color: #ffffff;
 	padding-left: 30px;
 	padding-right: 30px;
 	text-transform: uppercase;
-	border-bottom: 1px solid #55614c;
+	border-bottom: 1px solid #e22d45;
   font-size: 1em;
 }
 
@@ -61,18 +61,18 @@ a:link {
 }
 
 a:visited {
-	color: #515a63;
+	color: #287eae;
 	text-decoration: none;
   padding-left: 0px;
   font-size: 1.1em;
 }
 
 a:hover {
-	color: #55614c;
+	color: #e22d45;
 	text-decoration: none;
   padding-left: 0px;
   font-size: 1.1em;
-	border-bottom: 2px solid #55614c;
+	border-bottom: 2px solid #e22d45;
 }
 
 .location {
@@ -85,7 +85,7 @@ h1 {
   margin-left: 11%;
   margin-bottom: 4%;
   font-family: 'Righteous', cursive;
-  color: #515a63;
+  color: #287eae;
   font-size: 2.4em;
   text-transform: uppercase;
 }
@@ -101,7 +101,7 @@ h1 {
 }
 
 .menu {
-  background-color: #F0F0F0;
+  background-color: #ebebea;
   margin-top: 5%;
   padding-bottom: 1%;
 }
@@ -110,9 +110,16 @@ h1 {
   padding-top: 3%;
 }
 
+
+
 table {
 	border-collapse: collapse;
   margin: 20px auto;
+}
+
+.total td {
+  border: 0;
+  
 }
 
 th {
@@ -128,7 +135,7 @@ table, th, td {
 	padding-top: 5px;
 	padding-bottom: 5px;
   width: 700px;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   text-transform: capitalize;
 }
 
@@ -172,7 +179,7 @@ form textarea {
 }
 
 .contact button {
-  background-color: #55614c;
+  background-color: #e22d45;
   font-size: 1.1em;
   border: none;
   color: #FFFFFF;
