@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   development: {
     client: 'sqlite3',
@@ -20,6 +22,7 @@ module.exports = {
    production: {
     client: 'pg',
     connection: process.env.DATABASE_URL,
+    ssl: true,
     useNullAsDefault: true,
     pool: {
       min: 0,
