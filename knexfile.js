@@ -28,7 +28,7 @@ module.exports = {
     useNullAsDefault: true,
     pool: {
       min: 0,
-      max: 15,
+      max: 30,
     },
     migrations: {
       directory: './database/migrations',
