@@ -58,7 +58,7 @@ export const FormApp = () => (
     </Formik>
 
         <div className="contact-p">
-            <p>Feel free to contact us at 412-257-0097 or joanreid@reid-home.com with any questions.</p>
+            <p>Feel free to contact us at 412-215-6654 (voice or text) or joanreid@reid-home.com with any questions.</p>
         </div>
             <p>We look forward to hearing from you!</p>
         <div className="contact-a">
