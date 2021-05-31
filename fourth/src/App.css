@@ -11,8 +11,15 @@ body {
   font-size: 1.1.em;
 }
 
+p {
+  line-height: 125%;
+}
+
 .header {
   background-color: white;
+  background-image: url('images/picnicheaderv1.png');
+  background-repeat: no-repeat;
+  height: 415px;
 }
 
 .header-links {
@@ -21,6 +28,7 @@ body {
   width: 400px;
   margin: 0 auto;
   border-bottom: 1px solid #eae7de;
+  padding-top: 375px;
 }
 
 .header a:link {
@@ -152,7 +160,7 @@ form {
 }
 
 form label {
-  font-size: 1.1rem;
+  font-size: 1em;
 }
 
 form input {
@@ -217,4 +225,107 @@ form textarea {
   margin: 0 auto;
   color: #55614c;
   font-size: .8em;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    background-color: white;
+    background-image: none;
+  }
+
+  .header {
+    background-color: white;
+    background-image: url('images/picnicheaderv2.png');
+  }
+
+  .header-links {
+    width: 80%;
+    font-size: 1.2em;
+  }
+
+  .location {
+    margin-top: 75px;
+  }
+
+  .address {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  p {
+    margin-bottom: 60px;
+    line-height: 140%;
+  }
+
+  .map iframe {
+    width: 600px;
+    height: 400px;
+  }
+
+  .form {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .menu {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+
+  .contact-p {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  table {
+   width: 91%;
+  }
+
+  form label {
+    font-size: 1em;
+  }
+
+  .contact button {
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
+    width: 25%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+form textarea {
+  width: 75%;
+  height: 125px
+}
+
+form input {
+  width: 75%;
+  height: 50px;
+}
+
+.footer {
+  width: 90%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+td {
+  line-height: 140%;
+}
+
+th{
+  line-height: 160%;
+}
+
 }
