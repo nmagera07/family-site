@@ -6,7 +6,7 @@ const Menu = (props) => {
 
     useEffect(() => {
         axios
-            .get('https://reid-family-site.herokuapp.com/info')
+            .get('https://reid-family-site.herokuapp.com/info/xmas')
             .then(response => {
                 // console.log(response.data)
                 setState(response.data)
