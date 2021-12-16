@@ -6,7 +6,7 @@ const Location = (props) => {
             <h1>When's the party?</h1>
             <p id="top">The party will be on Saturday, January 1st, 2022 from 2:00pm until whenever.</p>
             <div className="address">
-                <p>The Reid's House</p>
+                <p>The Reids' House</p>
                 <p>3305 Washington Pike</p>
                 <p>Bridgeville, PA 15017</p>
             </div>
