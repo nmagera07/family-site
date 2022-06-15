@@ -1,50 +1,55 @@
 const db = require('../database/dbConfig.js')
 
 module.exports = {
-    getData,
-    add,
-    update,
-    findById,
-    remove
+    getXmasData,
+    addXmas,
+    updateXmas,
+    findByIdXmas,
+    removeXmas,
+    getFourthData,
+    addFourth,
+    updateFourth,
+    findByIdFourth,
+    removeFourth,
 }
 
 
-function add(newData) {
+function addXmas(newData) {
     return db('xmas').insert(newData)
 }
 
-function getData() {
+function getXmasData() {
     return db('xmas')
 }
 
-function update(changes, id) {
+function updateXmas(changes, id) {
     return db('xmas').where({id}).update(changes)
 }
 
-function findById(id) {
+function findByIdXmas(id) {
     return db('xmas').where({id})
 }
 
-function remove(id) {
+function removeXmas(id) {
     return db('xmas').where({ id }).del()
 }
 
-function add(newData) {
+function addFourth(newData) {
     return db('fourth').insert(newData)
 }
 
-function getData() {
+function getFourthData() {
     return db('fourth')
 }
 
-function update(changes, id) {
+function updateFourth(changes, id) {
     return db('fourth').where({id}).update(changes)
 }
 
-function findById(id) {
+function findByIdFourth(id) {
     return db('fourth').where({id})
 }
 
-function remove(id) {
+function removeFourth(id) {
     return db('fourth').where({ id }).del()
 }

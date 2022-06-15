@@ -1,11 +1,11 @@
 const router = require('express').Router()
 
-const Data = require('./data-model.js')
+const Xmas = require('./data-model.js')
 const Fourth = require('./data-model.js')
 
 router.get('/xmas', async (req,res) => {
     try {
-        const data = await Data.getData()
+        const data = await Xmas.getXmasData()
         res.json(data)
     } catch (error) {
         res.status(500).json({ message: 'Failed to get data'})
@@ -16,7 +16,7 @@ router.post('/xmas', async (req, res) => {
     const body = req.body
 
     try {
-        const data = await Data.add(body)
+        const data = await Xmas.addXmas(body)
         const newData = {id: data[0], ...body}
         res.status(201).json(newData)
     } catch (error) {
@@ -28,8 +28,8 @@ router.delete('/xmas/:id', async (req, res) => {
     const { id } = req.params
 
     try {
-        const deleted = await Data.remove(id)
-        const edited = await Data.getData()
+        const deleted = await Xmas.removeXmas(id)
+        const edited = await Xmas.getXmasData()
 
         if (deleted) {
             console.log(edited)
@@ -44,7 +44,7 @@ router.delete('/xmas/:id', async (req, res) => {
 
 router.get('/fourth', async (req,res) => {
     try {
-        const data = await Fourth.getData()
+        const data = await Fourth.getFourthData()
         res.json(data)
     } catch (error) {
         res.status(500).json({ message: 'Failed to get data'})
@@ -55,7 +55,7 @@ router.post('/fourth', async (req, res) => {
     const body = req.body
 
     try {
-        const data = await Fourth.add(body)
+        const data = await Fourth.addFourth(body)
         const newData = {id: data[0], ...body}
         res.status(201).json(newData)
     } catch (error) {
@@ -67,8 +67,8 @@ router.delete('/fourth/:id', async (req, res) => {
     const { id } = req.params
 
     try {
-        const deleted = await Fourth.remove(id)
-        const edited = await Fourth.getData()
+        const deleted = await Fourth.removeFourth(id)
+        const edited = await Fourth.getFourthData()
 
         if (deleted) {
             console.log(edited)
