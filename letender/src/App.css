@@ -50,14 +50,14 @@ p {
 }
    
 .header a:hover {
-	color: #e22d45;
+	color: #9e74a6;
 	/* padding-top: 4px;
 	padding-bottom: 2px; */
 	background-color: #ffffff;
 	padding-left: 30px;
 	padding-right: 30px;
 	text-transform: uppercase;
-	border-bottom: 1px solid #e22d45;
+	border-bottom: 1px solid #9e74a6;
   font-size: 1em;
 }
 
@@ -76,11 +76,11 @@ a:visited {
 }
 
 a:hover {
-	color: #e22d45;
+	color: #9e74a6;
 	text-decoration: none;
   padding-left: 0px;
   font-size: 1.1em;
-	border-bottom: 2px solid #e22d45;
+	border-bottom: 2px solid #9e74a6;
 }
 
 .location {
@@ -93,7 +93,7 @@ h1 {
   margin-left: 11%;
   margin-bottom: 4%;
   font-family: 'Righteous', cursive;
-  color: #287eae;
+  color: #68b6bb;
   font-size: 2.4em;
   text-transform: uppercase;
 }
@@ -193,7 +193,7 @@ form textarea {
 }
 
 .contact button {
-  background-color: #e22d45;
+  background-color: #9e74a6;
   font-size: 1.1em;
   border: none;
   color: #FFFFFF;
