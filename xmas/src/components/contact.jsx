@@ -83,7 +83,7 @@ const Contact = (props) => {
                 <button onClick={addData}>Submit</button>
             </form>
             <div className="contact-p">
-                {/* <p>Feel free to contact us at 412-257-0097 or joanreid@reid-home.com with any questions.</p> */}
+                <p>Feel free to contact us at 412-257-0097 or joanreid@reid-home.com with any questions.</p>
             </div>
             <p>We look forward to hearing from you!</p>
             <div className="contact-a">
