@@ -13,7 +13,7 @@ body {
 
 .header {
   background-color: white;
-  background-image: url('images/xmasmenuheader.png');
+  background-image: url('images/xmasmenuheader-bentleyv1.png');
   background-repeat: no-repeat;
   height: 415px;
 }
@@ -232,7 +232,7 @@ form textarea {
 
   .header {
     background-color: white;
-    background-image: url('images/xmasmenuheaderv2.png');
+    background-image: url('images/xmasmenuheader-bentleyv2.png');
   }
 
   .header-links {
@@ -337,7 +337,7 @@ form textarea {
 
   .header {
     background-color: white;
-    background-image: url('images/xmasmenuheaderv3.png');
+    background-image: url('images/xmasmenuheader-bentleyv3.png');
     height: 300px;
     width: 100%;
     margin-right: 0px;
