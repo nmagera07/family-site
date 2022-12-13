@@ -360,6 +360,11 @@ form textarea {
   .address {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 15px;
+  }
+
+  .address p {
+    margin: 10px;
   }
 
   .contact {
