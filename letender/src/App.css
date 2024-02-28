@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url('images/familypicnicbg.png');
+  background-image: url('images/EasterBG.webp');
   width: 1000px;
   margin: 0 auto;
   font-family: Roboto;
@@ -17,7 +17,7 @@ p {
 
 .header {
   background-color: white;
-  background-image: url('images/familypicnicheaderv1.png');
+  background-image: url('images/EasterHeader1.png');
   background-repeat: no-repeat;
   height: 415px;
 }
@@ -238,7 +238,7 @@ form textarea {
 
   .header {
     background-color: white;
-    background-image: url('images/familypicnicheaderv2.png');
+    background-image: url('images/EasterHeader2.png');
   }
 
   .header-links {
@@ -343,7 +343,7 @@ form textarea {
 
   .header {
     background-color: white;
-    background-image: url('images/familypicnicheaderv3.png');
+    background-image: url('images/EasterHeader3.png');
     height: 300px;
     width: 100%;
     margin-right: 0px;
