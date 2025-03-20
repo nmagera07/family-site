@@ -4,7 +4,7 @@ const Footer = (props) => {
     return ( 
         <div className="footer">
             <p></p>
-            <p>&copy; Nate & Cassie Magera 2024</p>
+            <p>&copy; Nate & Cassie Magera 2025</p>
         </div>
      );
 }
