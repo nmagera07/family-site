@@ -239,6 +239,7 @@ form textarea {
   .header {
     background-color: white;
     background-image: url('images/EasterHeader3.png');
+    width: 100%;
   }
 
   .header-links {
