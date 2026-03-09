@@ -238,7 +238,7 @@ form textarea {
 
   .header {
     background-color: white;
-    background-image: url('images/EasterHeader3.png');
+    background-image: url('images/EasterHeader2.png');
     width: 100%;
   }
 
@@ -302,7 +302,7 @@ form textarea {
     font-size: 1.1em;
     text-align: center;
     font-weight: bold;
-    width: 50%;
+    width: 60%;
     padding-top: 25px;
     padding-bottom: 25px;
   }
