@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "fourth",
+      "runtimeExecutable": "powershell.exe",
+      "runtimeArgs": [
+        "-NoProfile",
+        "-Command",
+        "Set-Location 'C:\\Users\\nmage\\Projects\\family-site\\fourth'; $env:PATH = 'C:\\Users\\nmage\\AppData\\Local\\nvm\\v24.18.0;' + $env:PATH; $env:BROWSER = 'none'; node node_modules/react-scripts/bin/react-scripts.js start"
+      ],
+      "port": 3000
+    }
+  ]
+}
