@@ -17,7 +17,7 @@ const Menu = (props) => {
         }
 
         fetchMenu()
-        const interval = setInterval(fetchMenu, 30000)
+        const interval = setInterval(fetchMenu, 5000)
         return () => clearInterval(interval)
     }, [])
 
