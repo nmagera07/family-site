@@ -21,11 +21,7 @@ const Menu = (props) => {
         return () => clearInterval(interval)
     }, [])
 
-    let arr = []
-
-    // console.log('set data', state.map(item => parseInt(item.guests)).reduce((a,b) => a + b, 0))
-    // console.log('data', state.map(item => arr.push(item.guests)))
-    return ( 
+    return (
         <div className="menu" id="mid">
             <h1>What's on the Menu?</h1>
 

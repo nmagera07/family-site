@@ -1,7 +1,6 @@
-import React, {useEffect} from 'react';
-import {withFormik, Form, Field, Formik} from 'formik'
+import React from 'react';
+import {Form, Field, Formik} from 'formik'
 import axios from 'axios'
-import * as Yup from 'yup'
 
 
 function validateName(value) {
