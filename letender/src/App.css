@@ -19,6 +19,8 @@ p {
   background-color: white;
   background-image: url('images/familypicnicheaderv1.png');
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 415px;
 }
 
@@ -242,6 +244,8 @@ form textarea {
   .header {
     background-color: white;
     background-image: url('images/familypicnicheaderv2.png');
+    background-size: cover;
+    background-position: center;
   }
 
   .header-links {
@@ -355,6 +359,8 @@ form textarea {
   .header {
     background-color: white;
     background-image: url('images/familypicnicheaderv3.png');
+    background-size: cover;
+    background-position: center;
     height: 300px;
     width: 100%;
     margin-right: 0px;
