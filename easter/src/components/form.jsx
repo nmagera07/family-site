@@ -1,14 +1,21 @@
-import React, {useEffect} from 'react';
-import {withFormik, Form, Field, Formik} from 'formik'
+import React from 'react';
+import {Form, Field, Formik} from 'formik'
 import axios from 'axios'
-import * as Yup from 'yup'
 
+
+function validateName(value) {
+    let error
+    if (!value || !value.trim()) {
+        error = '*Please enter your name'
+    }
+    return error
+}
 
 function validateGuests(value) {
     let error
     if (!value) {
-        error = ''
-    } else if (/^[A-Za-z]/i.test(value)) {
+        error = '*Please enter the number of guests'
+    } else if (!/^\d+$/.test(value)) {
         error = '*Please enter only numbers'
     }
     return error
@@ -44,10 +51,11 @@ export const FormApp = () => (
       {({ errors, touched, isValidating, resetForm, initialValues }) => (
         <Form>
             <label>Your Name:</label>
-          <Field name="name" />
-          
+          <Field name="name" validate={validateName}/>
+          {errors.name && touched.name && <div className="error">{errors.name}</div>}
+
             <label>Number of guests:</label>
-          <Field name="guests" validate={validateGuests}/>
+          <Field name="guests" type="number" min="1" validate={validateGuests}/>
           {errors.guests && touched.guests && <div className="error">{errors.guests}</div>}
             <label>What you're bringing:</label>
           <Field component="textarea" name="dishes" rows="4" cols="58"></Field>
