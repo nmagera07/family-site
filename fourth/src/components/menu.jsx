@@ -5,15 +5,20 @@ const Menu = (props) => {
     const [state, setState] = useState([])
 
     useEffect(() => {
-        axios
-            .get('https://reid-family-site.herokuapp.com/info/fourth')
-            .then(response => {
-                // console.log(response.data)
-                setState(response.data)
-            })
-            .catch(error => {
-                console.log(error)
-            })
+        const fetchMenu = () => {
+            axios
+                .get('https://reid-family-site.herokuapp.com/info/fourth')
+                .then(response => {
+                    setState(response.data)
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+        }
+
+        fetchMenu()
+        const interval = setInterval(fetchMenu, 30000)
+        return () => clearInterval(interval)
     }, [])
 
     let arr = []
