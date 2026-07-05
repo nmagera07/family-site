@@ -43,7 +43,7 @@ const Menu = (props) => {
 
             </table>
             <table className="total">
-                <td>Total Guests: {state.map(item => parseInt(item.guests)).reduce((a,b) => a + b, 0)}</td>
+                <td>Total Guests: {state.map(item => parseInt(item.guests) || 0).reduce((a,b) => a + b, 0)}</td>
                 </table>
         </div>
      );
