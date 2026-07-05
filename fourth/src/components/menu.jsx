@@ -14,7 +14,7 @@ const Menu = (props) => {
             .catch(error => {
                 console.log(error)
             })
-    }, [state])
+    }, [])
 
     let arr = []
 

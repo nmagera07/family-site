@@ -141,6 +141,10 @@ th {
 	font-size: 1.1em;
 }
 
+table {
+  width: 700px;
+}
+
 table, th, td {
 	text-align: left;
   border: 1px solid #c7c7c7;
@@ -148,7 +152,6 @@ table, th, td {
 	padding-right: 30px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-  width: 700px;
   margin-bottom: 0%;
   text-transform: capitalize;
 }
@@ -291,6 +294,13 @@ form textarea {
 
   table {
    width: 91%;
+   table-layout: fixed;
+  }
+
+  td, th {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-wrap: break-word;
   }
 
   form label {
@@ -409,6 +419,13 @@ form textarea {
 
   table {
    width: 90%;
+   table-layout: fixed;
+  }
+
+  td, th {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-wrap: break-word;
   }
 
   form label {
