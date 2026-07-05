@@ -26,7 +26,7 @@ export const FormApp = () => (
         dishes: '',
       }}
       onSubmit={(values, {resetForm}) => {
-        const url = 'https://reid-family-site.herokuapp.com/info/fourth'
+        const url = 'https://reid-family-site.herokuapp.com/info/easter'
 
         axios
             .post(url, values)

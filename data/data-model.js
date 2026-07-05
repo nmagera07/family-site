@@ -11,6 +11,16 @@ module.exports = {
     updateFourth,
     findByIdFourth,
     removeFourth,
+    getEasterData,
+    addEaster,
+    updateEaster,
+    findByIdEaster,
+    removeEaster,
+    getLetenderData,
+    addLetender,
+    updateLetender,
+    findByIdLetender,
+    removeLetender,
 }
 
 
@@ -52,4 +62,44 @@ function findByIdFourth(id) {
 
 function removeFourth(id) {
     return db('fourth').where({ id }).del()
+}
+
+function addEaster(newData) {
+    return db('easter').insert(newData)
+}
+
+function getEasterData() {
+    return db('easter')
+}
+
+function updateEaster(changes, id) {
+    return db('easter').where({id}).update(changes)
+}
+
+function findByIdEaster(id) {
+    return db('easter').where({id})
+}
+
+function removeEaster(id) {
+    return db('easter').where({ id }).del()
+}
+
+function addLetender(newData) {
+    return db('letender').insert(newData)
+}
+
+function getLetenderData() {
+    return db('letender')
+}
+
+function updateLetender(changes, id) {
+    return db('letender').where({id}).update(changes)
+}
+
+function findByIdLetender(id) {
+    return db('letender').where({id})
+}
+
+function removeLetender(id) {
+    return db('letender').where({ id }).del()
 }

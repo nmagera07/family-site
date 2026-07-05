@@ -27,7 +27,7 @@ const Contact = (props) => {
         e.preventDefault()
         
         axios 
-            .post('https://reid-family-site.herokuapp.com/info/fourth', inputData)
+            .post('https://reid-family-site.herokuapp.com/info/letender', inputData)
             .then(response => {
                 console.log(response)
                 setState(response)
