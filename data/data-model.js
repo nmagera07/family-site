@@ -6,21 +6,25 @@ module.exports = {
     updateXmas,
     findByIdXmas,
     removeXmas,
+    clearXmas,
     getFourthData,
     addFourth,
     updateFourth,
     findByIdFourth,
     removeFourth,
+    clearFourth,
     getEasterData,
     addEaster,
     updateEaster,
     findByIdEaster,
     removeEaster,
+    clearEaster,
     getLetenderData,
     addLetender,
     updateLetender,
     findByIdLetender,
     removeLetender,
+    clearLetender,
 }
 
 
@@ -44,6 +48,10 @@ function removeXmas(id) {
     return db('xmas').where({ id }).del()
 }
 
+function clearXmas() {
+    return db('xmas').del()
+}
+
 function addFourth(newData) {
     return db('fourth').insert(newData)
 }
@@ -62,6 +70,10 @@ function findByIdFourth(id) {
 
 function removeFourth(id) {
     return db('fourth').where({ id }).del()
+}
+
+function clearFourth() {
+    return db('fourth').del()
 }
 
 function addEaster(newData) {
@@ -84,6 +96,10 @@ function removeEaster(id) {
     return db('easter').where({ id }).del()
 }
 
+function clearEaster() {
+    return db('easter').del()
+}
+
 function addLetender(newData) {
     return db('letender').insert(newData)
 }
@@ -102,4 +118,8 @@ function findByIdLetender(id) {
 
 function removeLetender(id) {
     return db('letender').where({ id }).del()
+}
+
+function clearLetender() {
+    return db('letender').del()
 }

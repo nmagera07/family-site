@@ -5,6 +5,16 @@ const Fourth = require('./data-model.js')
 const Easter = require('./data-model.js')
 const Letender = require('./data-model.js')
 
+function requireAdminKey(req, res, next) {
+    const key = req.headers['x-admin-key']
+
+    if (!process.env.ADMIN_SECRET || key !== process.env.ADMIN_SECRET) {
+        return res.status(401).json({ message: 'Unauthorized' })
+    }
+
+    next()
+}
+
 router.get('/xmas', async (req,res) => {
     try {
         const data = await Xmas.getXmasData()
@@ -158,6 +168,42 @@ router.delete('/letender/:id', async (req, res) => {
         }
     } catch (error) {
         res.status(500).json({ message: 'Failed to delete data'})
+    }
+})
+
+router.delete('/xmas', requireAdminKey, async (req, res) => {
+    try {
+        await Xmas.clearXmas()
+        res.json({ message: 'xmas table cleared' })
+    } catch (error) {
+        res.status(500).json({ message: 'Failed to clear data' })
+    }
+})
+
+router.delete('/fourth', requireAdminKey, async (req, res) => {
+    try {
+        await Fourth.clearFourth()
+        res.json({ message: 'fourth table cleared' })
+    } catch (error) {
+        res.status(500).json({ message: 'Failed to clear data' })
+    }
+})
+
+router.delete('/easter', requireAdminKey, async (req, res) => {
+    try {
+        await Easter.clearEaster()
+        res.json({ message: 'easter table cleared' })
+    } catch (error) {
+        res.status(500).json({ message: 'Failed to clear data' })
+    }
+})
+
+router.delete('/letender', requireAdminKey, async (req, res) => {
+    try {
+        await Letender.clearLetender()
+        res.json({ message: 'letender table cleared' })
+    } catch (error) {
+        res.status(500).json({ message: 'Failed to clear data' })
     }
 })
 
