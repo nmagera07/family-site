@@ -5,19 +5,23 @@ const Menu = (props) => {
     const [state, setState] = useState([])
 
     useEffect(() => {
-        axios
-            .get('https://reid-family-site.herokuapp.com/info/xmas')
-            .then(response => {
-                // console.log(response.data)
-                setState(response.data)
-            })
-            .catch(error => {
-                console.log(error)
-            })
-    }, [state])
+        const fetchMenu = () => {
+            axios
+                .get('https://reid-family-site.herokuapp.com/info/xmas')
+                .then(response => {
+                    setState(response.data)
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+        }
 
-    // console.log('props', props)
-    return ( 
+        fetchMenu()
+        const interval = setInterval(fetchMenu, 5000)
+        return () => clearInterval(interval)
+    }, [])
+
+    return (
         <div className="menu" id="mid">
             <h1>What's on the Menu?</h1>
 
@@ -39,7 +43,7 @@ const Menu = (props) => {
                 </tbody>
             </table>
             <table className="total">
-                <td>Total Guests: {state.map(item => parseInt(item.guests)).reduce((a,b) => a + b, 0)}</td>
+                <td>Total Guests: {state.map(item => parseInt(item.guests) || 0).reduce((a,b) => a + b, 0)}</td>
                 </table>
         </div>
      );
