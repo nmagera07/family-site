@@ -4,7 +4,7 @@ const Location = (props) => {
     return ( 
         <div className="location">
             <h1>When's the party?</h1>
-            <p>The party will be on Sunday, July 20th, 2025 from 2:00pm until whenever.</p>
+            <p>The party will be on Sunday, July 19th, 2026 from 12:00pm until whenever.</p>
             <div className="address">
                 <p>The Reids' House
                     <br/>
