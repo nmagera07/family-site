@@ -20,7 +20,7 @@ p {
   background-image: url('images/picnicheaderv1.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
-  height: 415px;
+  aspect-ratio: 1000 / 375;
 }
 
 .header-links {
@@ -29,10 +29,9 @@ p {
   width: 400px;
   margin: 0 auto;
   border-bottom: 1px solid #eae7de;
-  padding-top: 375px;
 }
 
-.header a:link {
+.header-links a:link {
   color: #55614c;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -41,7 +40,7 @@ p {
   font-size: 1em;
 }
 
-.header a:visited {
+.header-links a:visited {
 	color: #55614c;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -49,8 +48,8 @@ p {
 	text-decoration: none;
   font-size: 1em;
 }
-   
-.header a:hover {
+
+.header-links a:hover {
 	color: #e22d45;
 	/* padding-top: 4px;
 	padding-bottom: 2px; */
@@ -244,6 +243,7 @@ form textarea {
     background-color: white;
     background-image: url('images/picnicheaderv2.png');
     background-size: 100% auto;
+    aspect-ratio: 768 / 375;
   }
 
   .header-links {
@@ -358,7 +358,7 @@ form textarea {
     background-color: white;
     background-image: url('images/picnicheaderv3.png');
     background-size: 100% auto;
-    height: 300px;
+    aspect-ratio: 414 / 250;
     width: 100%;
     margin-right: 0px;
     padding-right: 0px;
@@ -367,7 +367,6 @@ form textarea {
   .header-links {
     width: 75%;
     font-size: 1.1em;
-    padding-top: 250px;
     justify-content: center;
   }
 
