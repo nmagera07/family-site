@@ -19,6 +19,7 @@ p {
   background-color: white;
   background-image: url('images/picnicheaderv1.png');
   background-repeat: no-repeat;
+  background-size: 100% auto;
   height: 415px;
 }
 
@@ -242,6 +243,7 @@ form textarea {
   .header {
     background-color: white;
     background-image: url('images/picnicheaderv2.png');
+    background-size: 100% auto;
   }
 
   .header-links {
@@ -355,6 +357,7 @@ form textarea {
   .header {
     background-color: white;
     background-image: url('images/picnicheaderv3.png');
+    background-size: 100% auto;
     height: 300px;
     width: 100%;
     margin-right: 0px;
