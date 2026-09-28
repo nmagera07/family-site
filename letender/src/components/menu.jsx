@@ -7,7 +7,7 @@ const Menu = (props) => {
     useEffect(() => {
         const fetchMenu = () => {
             axios
-                .get('https://reid-family-site.herokuapp.com/info/letender')
+                .get('https://family-site-mrbq.onrender.com/info/letender')
                 .then(response => {
                     setState(response.data)
                 })

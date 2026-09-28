@@ -33,7 +33,7 @@ export const FormApp = () => (
         dishes: '',
       }}
       onSubmit={(values, {resetForm}) => {
-        const url = 'https://reid-family-site.herokuapp.com/info/fourth'
+        const url = 'https://family-site-mrbq.onrender.com/info/fourth'
 
         axios
             .post(url, values)
